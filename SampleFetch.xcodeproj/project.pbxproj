@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F02D20FC937772170AA4ED7 /* libPods-SampleFetch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 756A653CD9716F09A3142250 /* libPods-SampleFetch.a */; };
+		E11053B71D052FAB00ACC96C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E11053B61D052FAB00ACC96C /* main.m */; };
+		E11053BA1D052FAB00ACC96C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E11053B91D052FAB00ACC96C /* AppDelegate.m */; };
+		E11053BD1D052FAB00ACC96C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E11053BC1D052FAB00ACC96C /* ViewController.m */; };
+		E11053C01D052FAB00ACC96C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11053BE1D052FAB00ACC96C /* Main.storyboard */; };
+		E11053C31D052FAB00ACC96C /* SampleFetch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E11053C11D052FAB00ACC96C /* SampleFetch.xcdatamodeld */; };
+		E11053C51D052FAB00ACC96C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11053C41D052FAB00ACC96C /* Assets.xcassets */; };
+		E11053C81D052FAB00ACC96C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11053C61D052FAB00ACC96C /* LaunchScreen.storyboard */; };
+		E11053D51D0536A400ACC96C /* SFAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = E11053D41D0536A400ACC96C /* SFAddress.m */; };
+		E11053D81D0536B700ACC96C /* SFBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E11053D71D0536B700ACC96C /* SFBaseModel.m */; };
+		E11053DB1D05374B00ACC96C /* SFCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = E11053DA1D05374B00ACC96C /* SFCompany.m */; };
+		E11053DE1D05387400ACC96C /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E11053DD1D05387400ACC96C /* HttpManager.m */; };
+		E11053E41D05408600ACC96C /* SFBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E11053E31D05408600ACC96C /* SFBaseTableViewCell.m */; };
+		E11053E71D0540A800ACC96C /* SFCompanyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E11053E61D0540A800ACC96C /* SFCompanyTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		53BE0694061C117E71E693E4 /* Pods-SampleFetch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleFetch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleFetch/Pods-SampleFetch.debug.xcconfig"; sourceTree = "<group>"; };
+		756A653CD9716F09A3142250 /* libPods-SampleFetch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleFetch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9871D62FE6CC3AC9AD1C0A88 /* Pods-SampleFetch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleFetch.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleFetch/Pods-SampleFetch.release.xcconfig"; sourceTree = "<group>"; };
+		E11053B21D052FAB00ACC96C /* SampleFetch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleFetch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11053B61D052FAB00ACC96C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E11053B81D052FAB00ACC96C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E11053B91D052FAB00ACC96C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E11053BB1D052FAB00ACC96C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		E11053BC1D052FAB00ACC96C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
+		E11053BF1D052FAB00ACC96C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E11053C21D052FAB00ACC96C /* SampleFetch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SampleFetch.xcdatamodel; sourceTree = "<group>"; };
+		E11053C41D052FAB00ACC96C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E11053C71D052FAB00ACC96C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E11053C91D052FAB00ACC96C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11053D31D0536A400ACC96C /* SFAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAddress.h; sourceTree = "<group>"; };
+		E11053D41D0536A400ACC96C /* SFAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAddress.m; sourceTree = "<group>"; };
+		E11053D61D0536B700ACC96C /* SFBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBaseModel.h; sourceTree = "<group>"; };
+		E11053D71D0536B700ACC96C /* SFBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBaseModel.m; sourceTree = "<group>"; };
+		E11053D91D05374B00ACC96C /* SFCompany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCompany.h; sourceTree = "<group>"; };
+		E11053DA1D05374B00ACC96C /* SFCompany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCompany.m; sourceTree = "<group>"; };
+		E11053DC1D05387400ACC96C /* HttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
+		E11053DD1D05387400ACC96C /* HttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
+		E11053E21D05408600ACC96C /* SFBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBaseTableViewCell.h; sourceTree = "<group>"; };
+		E11053E31D05408600ACC96C /* SFBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBaseTableViewCell.m; sourceTree = "<group>"; };
+		E11053E51D0540A800ACC96C /* SFCompanyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCompanyTableViewCell.h; sourceTree = "<group>"; };
+		E11053E61D0540A800ACC96C /* SFCompanyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCompanyTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E11053AF1D052FAB00ACC96C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F02D20FC937772170AA4ED7 /* libPods-SampleFetch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17CA86B4156AD24B6A89EC9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53BE0694061C117E71E693E4 /* Pods-SampleFetch.debug.xcconfig */,
+				9871D62FE6CC3AC9AD1C0A88 /* Pods-SampleFetch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1DB415C8CF3343D7D9CAE03E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				756A653CD9716F09A3142250 /* libPods-SampleFetch.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E11053A91D052FAB00ACC96C = {
+			isa = PBXGroup;
+			children = (
+				E11053B41D052FAB00ACC96C /* SampleFetch */,
+				E11053B31D052FAB00ACC96C /* Products */,
+				17CA86B4156AD24B6A89EC9D /* Pods */,
+				1DB415C8CF3343D7D9CAE03E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E11053B31D052FAB00ACC96C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E11053B21D052FAB00ACC96C /* SampleFetch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E11053B41D052FAB00ACC96C /* SampleFetch */ = {
+			isa = PBXGroup;
+			children = (
+				E11053B81D052FAB00ACC96C /* AppDelegate.h */,
+				E11053B91D052FAB00ACC96C /* AppDelegate.m */,
+				E11053CF1D05361000ACC96C /* Models */,
+				E11053D01D05361000ACC96C /* Networking */,
+				E11053D11D05361000ACC96C /* ViewControllers */,
+				E11053D21D05361000ACC96C /* Views */,
+				E11053BE1D052FAB00ACC96C /* Main.storyboard */,
+				E11053C41D052FAB00ACC96C /* Assets.xcassets */,
+				E11053C61D052FAB00ACC96C /* LaunchScreen.storyboard */,
+				E11053C91D052FAB00ACC96C /* Info.plist */,
+				E11053C11D052FAB00ACC96C /* SampleFetch.xcdatamodeld */,
+				E11053B51D052FAB00ACC96C /* Supporting Files */,
+			);
+			path = SampleFetch;
+			sourceTree = "<group>";
+		};
+		E11053B51D052FAB00ACC96C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E11053B61D052FAB00ACC96C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E11053CF1D05361000ACC96C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E11053D61D0536B700ACC96C /* SFBaseModel.h */,
+				E11053D71D0536B700ACC96C /* SFBaseModel.m */,
+				E11053D31D0536A400ACC96C /* SFAddress.h */,
+				E11053D41D0536A400ACC96C /* SFAddress.m */,
+				E11053D91D05374B00ACC96C /* SFCompany.h */,
+				E11053DA1D05374B00ACC96C /* SFCompany.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E11053D01D05361000ACC96C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E11053DC1D05387400ACC96C /* HttpManager.h */,
+				E11053DD1D05387400ACC96C /* HttpManager.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E11053D11D05361000ACC96C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E11053BB1D052FAB00ACC96C /* ViewController.h */,
+				E11053BC1D052FAB00ACC96C /* ViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E11053D21D05361000ACC96C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E11053E21D05408600ACC96C /* SFBaseTableViewCell.h */,
+				E11053E31D05408600ACC96C /* SFBaseTableViewCell.m */,
+				E11053E51D0540A800ACC96C /* SFCompanyTableViewCell.h */,
+				E11053E61D0540A800ACC96C /* SFCompanyTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E11053B11D052FAB00ACC96C /* SampleFetch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11053CC1D052FAB00ACC96C /* Build configuration list for PBXNativeTarget "SampleFetch" */;
+			buildPhases = (
+				2173DBD41DE6104F4C7B5FEB /* [CP] Check Pods Manifest.lock */,
+				E11053AE1D052FAB00ACC96C /* Sources */,
+				E11053AF1D052FAB00ACC96C /* Frameworks */,
+				E11053B01D052FAB00ACC96C /* Resources */,
+				5A7D5E8F24C96BA3D54BC6CD /* [CP] Embed Pods Frameworks */,
+				6C8B52B1273F52CD36BE3ADD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleFetch;
+			productName = SampleFetch;
+			productReference = E11053B21D052FAB00ACC96C /* SampleFetch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E11053AA1D052FAB00ACC96C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Eezy;
+				TargetAttributes = {
+					E11053B11D052FAB00ACC96C = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = E11053AD1D052FAB00ACC96C /* Build configuration list for PBXProject "SampleFetch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E11053A91D052FAB00ACC96C;
+			productRefGroup = E11053B31D052FAB00ACC96C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E11053B11D052FAB00ACC96C /* SampleFetch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E11053B01D052FAB00ACC96C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11053C81D052FAB00ACC96C /* LaunchScreen.storyboard in Resources */,
+				E11053C51D052FAB00ACC96C /* Assets.xcassets in Resources */,
+				E11053C01D052FAB00ACC96C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2173DBD41DE6104F4C7B5FEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5A7D5E8F24C96BA3D54BC6CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleFetch/Pods-SampleFetch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C8B52B1273F52CD36BE3ADD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleFetch/Pods-SampleFetch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E11053AE1D052FAB00ACC96C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11053D51D0536A400ACC96C /* SFAddress.m in Sources */,
+				E11053C31D052FAB00ACC96C /* SampleFetch.xcdatamodeld in Sources */,
+				E11053BD1D052FAB00ACC96C /* ViewController.m in Sources */,
+				E11053DE1D05387400ACC96C /* HttpManager.m in Sources */,
+				E11053D81D0536B700ACC96C /* SFBaseModel.m in Sources */,
+				E11053E41D05408600ACC96C /* SFBaseTableViewCell.m in Sources */,
+				E11053E71D0540A800ACC96C /* SFCompanyTableViewCell.m in Sources */,
+				E11053BA1D052FAB00ACC96C /* AppDelegate.m in Sources */,
+				E11053B71D052FAB00ACC96C /* main.m in Sources */,
+				E11053DB1D05374B00ACC96C /* SFCompany.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E11053BE1D052FAB00ACC96C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11053BF1D052FAB00ACC96C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E11053C61D052FAB00ACC96C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11053C71D052FAB00ACC96C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E11053CA1D052FAB00ACC96C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E11053CB1D052FAB00ACC96C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E11053CD1D052FAB00ACC96C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53BE0694061C117E71E693E4 /* Pods-SampleFetch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SampleFetch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eezy.SampleFetch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E11053CE1D052FAB00ACC96C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9871D62FE6CC3AC9AD1C0A88 /* Pods-SampleFetch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SampleFetch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eezy.SampleFetch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E11053AD1D052FAB00ACC96C /* Build configuration list for PBXProject "SampleFetch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11053CA1D052FAB00ACC96C /* Debug */,
+				E11053CB1D052FAB00ACC96C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E11053CC1D052FAB00ACC96C /* Build configuration list for PBXNativeTarget "SampleFetch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11053CD1D052FAB00ACC96C /* Debug */,
+				E11053CE1D052FAB00ACC96C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E11053C11D052FAB00ACC96C /* SampleFetch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E11053C21D052FAB00ACC96C /* SampleFetch.xcdatamodel */,
+			);
+			currentVersion = E11053C21D052FAB00ACC96C /* SampleFetch.xcdatamodel */;
+			path = SampleFetch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E11053AA1D052FAB00ACC96C /* Project object */;
+}
